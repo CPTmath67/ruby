@@ -1,0 +1,11 @@
+#!/usr/bin/ruby -w
+tab=[]
+file = File.open("temp.txt", "r") 
+File.readlines(file).each do |line| tab << line.to_f end
+
+puts "la température minimum est de #{tab.min} degrés"
+puts "La température minimum est de #{tab.max} degrés"
+
+somme= tab.inject(0){|s, t|s + t}
+puts "Moyenne des températures #{somme / tab.length}"
+		

@@ -1,0 +1,11 @@
+#!/usr/bin/ruby
+i=1
+puts "Avec un itérateur"
+	20.times{ |i| puts i}
+	
+
+puts "Avec une structure de contrôle"
+while i < 21
+	puts i
+	i += 1
+end 
